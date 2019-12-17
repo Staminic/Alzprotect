@@ -1,0 +1,32 @@
+// FOOTER STYLES
+
+.main-footer {
+  background-color: $primary;
+  color: $white;
+  font-size: $font-size-base;
+  font-weight: $font-weight-semibold;
+}
+
+.custom-footer-nav {
+  align-self: center;
+
+  .nav-link {
+    color: $white;
+  }
+}
+
+.custom-footer-address {
+  padding: $nav-link-padding-y $nav-link-padding-x;
+  font-weight: $font-weight-normal;
+
+  h2 {
+    color: inherit;
+  }
+}
+
+.second-footer {
+  .nav-link {
+    color: $primary;
+    font-size: $font-size-base;
+  }
+}

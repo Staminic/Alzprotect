@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.67 27.67" width="27" height="27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #43596d;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #43596d;
+        stroke-miterlimit: 10;
+        stroke-width: 0.98px;
+      }
+    </style>
+  </defs>
+  <title>search-solid-primary</title>
+  <g id="Calque_2" data-name="Calque 2">
+    <g id="Calque_2-2" data-name="Calque 2">
+      <g>
+        <path class="cls-1" d="M11.29,22.1A10.81,10.81,0,1,1,22.1,11.29,10.82,10.82,0,0,1,11.29,22.1Z"/>
+        <path class="cls-2" d="M11.29,1A10.32,10.32,0,1,1,1,11.29,10.33,10.33,0,0,1,11.29,1m0-1a11.3,11.3,0,1,0,11.3,11.29A11.3,11.3,0,0,0,11.29,0Z"/>
+      </g>
+      <line class="cls-3" x1="27.32" y1="27.33" x2="18.99" y2="18.99"/>
+    </g>
+  </g>
+</svg>

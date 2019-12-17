@@ -1,0 +1,251 @@
+// MENU STYLES
+
+// .nav-link-search {
+//   display: block;
+//   position: relative;
+//   width: 16px;
+//   height: 16px;
+//   line-height: 16px;
+//   overflow: hidden;
+//   padding: 0 !important;
+//
+//   &::before {
+//     content: '\f002';
+//     font-family: 'Font Awesome 5 Free';
+//     font-weight: 900;
+//   }
+// }
+
+// MAINMENU
+
+.nav-item {
+  &.active {
+    .nav-link {
+      text-decoration: underline;
+    }
+  }
+}
+
+#main-nav {
+  .nav-item {
+    &.active {
+      .nav-link {
+        text-decoration: none;
+
+        @include media-breakpoint-up(lg) {
+          color: $secondary;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &:last-child {
+      .nav-link {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .nav-link {
+    color: $primary;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+
+      @include media-breakpoint-up(lg) {
+        color: $secondary;
+        text-decoration: underline;
+      }
+    }
+
+    &[aria-expanded="true"] {
+      color: $secondary;
+    }
+  }
+
+  .dropdown-toggle {
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+
+  .alias {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+}
+
+.navbar-expand-lg {
+  .navbar-nav {
+    .nav-link {
+      padding-right: .85rem;
+      padding-left: .85rem;
+
+      @media(min-width: 1366px) {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+      }
+    }
+  }
+}
+
+.navbar-collapse {
+  margin-top: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+  }
+
+  .nav {
+    >.nav-item {
+      border-bottom: 1px solid $secondary;
+      @include media-breakpoint-up(lg) {
+        border: none;
+      }
+    }
+
+    >.nav-item {
+      &.item-159,
+      &.item-160 {
+        border: none;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  display: block !important;
+  height: 0;
+  overflow: hidden;
+  margin-top: -.5rem;
+  padding-top: 0;
+  border-color: transparent;
+  border-radius: 0;
+  transition-timing-function: ease-in-out;
+  transition-duration: .3s;
+  transition-property: height;
+}
+
+.nav-item {
+  &.item-116 {
+    .dropdown-menu {
+      &.show {
+        height: 170px;
+      }
+    }
+  }
+
+  &.item-122 {
+    .dropdown-menu {
+      &.show {
+        height: 200px;
+      }
+    }
+  }
+}
+
+.dropdown-item {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: $secondary;
+  font-size: $font-size-bodytext;
+}
+
+// SUBMENU
+
+.moduletable-submenu {
+  .nav {
+    padding: ($spacer * .5);
+    justify-content: center;
+  }
+
+  .nav-link {
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+// SECOND MENU
+
+#second-nav {
+  .nav-link {
+    color: $white;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
+
+.picto {
+  &::before {
+    display: inline-block;
+    margin-right: .5rem;
+    line-height: 0;
+    vertical-align: middle;
+  }
+}
+
+.investor {
+  &::before {
+    content: url(../img/investor-icon-primary.svg);
+
+    @include media-breakpoint-up(lg) {
+      padding-left: 0 !important;
+      content: url(../img/investor-icon.svg);
+    }
+  }
+}
+
+.ill-people {
+  &::before {
+    content: url(../img/ill-people-icon-primary.svg);
+
+    @include media-breakpoint-up(lg) {
+      content: url(../img/ill-people-icon.svg);
+    }
+  }
+}
+
+.press {
+  &::before {
+    content: url(../img/press-icon-primary.svg);
+
+    @include media-breakpoint-up(lg) {
+      content: url(../img/press-icon.svg);
+    }
+  }
+}
+
+.search {
+  @include media-breakpoint-up(lg) {
+    width: 16px;
+    height: 16px;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+
+  &::before {
+    content: url(../img/search-solid-primary.svg);
+
+    @include media-breakpoint-up(lg) {
+      content: url(../img/search-solid.svg);
+      vertical-align: top;
+    }
+  }
+}
+
+// TOGGLE MENU
+
+.navbar-toggler {
+  padding-right: .5rem;
+  padding-left: .5rem;
+  border-color: $primary;
+}
+
+.navbar-toggler-icon {
+  width: auto;
+  height: auto;
+}

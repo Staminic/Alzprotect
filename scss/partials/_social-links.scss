@@ -1,0 +1,11 @@
+// SOCIAL LINKS STYLES
+
+.custom-social-links {
+  font-size: ($font-size-base * 1.5);
+
+  > a {
+    margin-right: .2rem;
+    margin-left: .2rem;
+    color: $white;
+  }
+}

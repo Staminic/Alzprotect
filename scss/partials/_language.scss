@@ -1,0 +1,15 @@
+// LANG STYLES
+
+.mod-languages {
+  .nav-link {
+    &::before {
+      content: '\f0ac';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+    }
+  }
+
+  .nav-item {
+    border-bottom: none !important;
+  }
+}

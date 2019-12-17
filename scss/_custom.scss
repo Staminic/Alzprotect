@@ -1,0 +1,79 @@
+// TEMPLATE STYLES
+
+@import "partials/layout";
+@import "partials/navbar";
+@import "partials/menu";
+@import "partials/footer";
+@import "partials/homepage";
+@import "partials/language";
+@import "partials/social-links";
+@import "partials/hero";
+@import "partials/card";
+@import "partials/partners";
+
+// General
+
+body {
+  color: $primary;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-bodytext;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  color: $secondary;
+  font-weight: $font-weight-bold;
+}
+
+a,
+a:hover {
+  color: $secondary;
+}
+
+// Typo
+
+.lead {
+  margin-bottom: ($spacer * 2.5);
+  font-weight: $font-weight-semibold;
+}
+
+section {
+  .item {
+    p {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Buttons
+
+.btn {
+  border-radius: 0;
+  font-size: $font-size-bodytext;
+}
+
+.btn-lg {
+  padding: 1.875rem;
+  border-radius: 0;
+  font-size: $font-size-bodytext;
+  font-weight: $font-weight-semibold;
+}
+
+.btn-sm {
+  font-size: $font-size-base;
+}
+
+.input-group {
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+.text-center {
+  .btn {
+    width: 16rem;
+    margin: $spacer;
+  }
+}

@@ -1,0 +1,135 @@
+// FOOTER STYLES
+
+.item-page {
+  &.homepage {
+    section {
+      position: relative;
+      padding-top: $spacer;
+      padding-bottom: $spacer;
+      @include media-breakpoint-up(sm) {
+        padding: ($spacer * 4);
+      }
+
+      font-size: $h4-font-size;
+      text-align: center;
+
+      .card {
+        text-align: left;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+    .section-1 {
+      color: $white;
+
+      h1 {
+        font-weight: $font-weight-light;
+        text-transform: uppercase;
+      }
+
+      hr {
+        width: 20%;
+        margin-top: $spacer * 3;
+        margin-bottom: $spacer * 3;
+        border-top: 5px solid $white;
+      }
+
+      &::before {
+        background-color: $black;
+        background-image: url('/images/homepage/brain.jpg');
+      }
+
+      &::after {
+        background-color: $black;
+        opacity: .5;
+      }
+    }
+
+    .section-2 {
+      font-weight: $font-weight-semibold;
+
+      .purpose {
+        @include media-breakpoint-up(lg) {
+          width: 75%;
+        }
+        margin-right: auto;
+        margin-left: auto;
+        padding: $spacer;
+        background-color: $white;
+        border: 8px solid $secondary;
+        color: $secondary;
+        font-weight: $font-weight-bold;
+      }
+
+      &::before {
+        background-color: $white;
+        background-image: url('/images/homepage/researcher.jpg');
+        background-size: cover;
+      }
+
+      &::after {
+        background-color: $white;
+        opacity: .8;
+      }
+    }
+
+    .section-3 {
+      color: $white;
+
+      &::before {
+        background-color: $black;
+        background-image: url('/images/homepage/neurons.jpg');
+        background-size: cover;
+      }
+
+      &::after {
+        background-color: $black;
+        opacity: .25;
+      }
+
+      .brain-drawing {
+        width: 25%;
+        position: absolute;
+        top: $spacer;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+
+    .section-4 {
+      padding-bottom: 0;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+  }
+
+  .btn-lg {
+    margin-top: $spacer * 2;
+    border:1px solid $white;
+  }
+}

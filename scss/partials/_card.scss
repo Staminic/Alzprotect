@@ -1,0 +1,30 @@
+// CARD CUSTOM STYLES
+
+.card {
+  border: none;
+}
+
+.card-body {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.card-footer {
+  padding-right: 0;
+  padding-top: 0;
+  padding-left: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.card-title {
+  > a {
+    color: inherit;
+  }
+}
+
+.card-text {
+  p:last-child {
+    margin: 0;
+  }
+}

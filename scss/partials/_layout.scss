@@ -1,0 +1,25 @@
+// LAYOUT STYLES
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main {
+  flex: 1 0 auto;
+  padding-bottom: ($spacer * 5.625);
+}
+
+.moduletable-submenu {
+  position: sticky;
+  top: 69px;
+  z-index: 1050;
+}
+
+.article-body,
+.blog-body,
+.contactform-body,
+.search-body {
+  margin-top: ($spacer * 2.5);
+}
