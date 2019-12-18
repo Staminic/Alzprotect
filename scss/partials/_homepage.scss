@@ -60,7 +60,7 @@
 
       &::before {
         background-color: $black;
-        background-image: url('images/homepage/brain.jpg');
+        background-image: url('/images/homepage/brain.jpg');
       }
 
       &::after {
@@ -87,7 +87,7 @@
 
       &::before {
         background-color: $white;
-        background-image: url('images/homepage/researcher.jpg');
+        background-image: url('/images/homepage/researcher.jpg');
         background-size: cover;
       }
 
@@ -102,7 +102,7 @@
 
       &::before {
         background-color: $black;
-        background-image: url('images/homepage/neurons.jpg');
+        background-image: url('/images/homepage/neurons.jpg');
         background-size: cover;
       }
 
